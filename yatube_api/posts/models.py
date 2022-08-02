@@ -30,7 +30,7 @@ class Post(models.Model):
     )
 
     def __str__(self):
-        return self.text
+        return self.text[0:15]
 
 
 class Comment(models.Model):
@@ -46,4 +46,4 @@ class Comment(models.Model):
     )
 
     def __str__(self):
-        return self.text
+        return self.text[0:15]
